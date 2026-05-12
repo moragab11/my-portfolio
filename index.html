@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Ragab — ML & Data Science Engineer</title>
+  <meta name="description" content="Mohamed Ragab — Machine Learning & Data Science Engineer building AI systems from deepfake detection to RAG agents." />
+  <meta name="author" content="Mohamed Ragab">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">MR<span class="brand-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="https://drive.google.com/uc?export=download&id=1H1kYPSrWMUdjS6Y7cHRu2zD8lzEZxBGq" target="_blank" rel="noopener">
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
+      </a>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#experience" class="mob-link">Experience</a>
+      <a href="#contact" class="mob-link">Contact</a>
+      <a href="https://drive.google.com/uc?export=download&id=1H1kYPSrWMUdjS6Y7cHRu2zD8lzEZxBGq" class="mob-link" target="_blank">Resume ↓</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up" style="--d:0s">
+        <span class="badge-dot"></span>
+        <span>Available for opportunities</span>
+      </div>
+      <h1 class="hero-name reveal-up" style="--d:.1s">
+        <span class="name-line">Mohamed</span>
+        <span class="name-line accent-text">Ragab</span>
+      </h1>
+      <p class="hero-role reveal-up" style="--d:.2s">
+        <span class="role-prefix">—</span> ML & Data Science Engineer
+      </p>
+      <p class="hero-desc reveal-up" style="--d:.3s">
+        Building AI systems that matter — from deepfake detection with 0.98 AUC to RAG pipelines processing 200+ documents. Final-year CS/AI student at Helwan University, GPA 3.4.
+      </p>
+      <div class="hero-ctas reveal-up" style="--d:.4s">
+        <a class="btn-primary" href="#projects">
+          <span>See my work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a class="btn-secondary" href="#contact">Let's talk</a>
+      </div>
+      <div class="hero-stats reveal-up" style="--d:.5s">
+        <div class="stat">
+          <span class="stat-num">0.98</span>
+          <span class="stat-label">Best AUC Score</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">PDFs Processed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">9+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-up" style="--d:.3s">
+      <div class="pfp-wrapper">
+        <div class="pfp-ring"></div>
+        <div class="pfp-ring pfp-ring-2"></div>
+        <img src="images/profile1.jpg" alt="Mohamed Ragab" class="pfp-img" />
+        <div class="pfp-badge">
+          <i class="fa-solid fa-brain"></i>
+          <span>AI / ML</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint reveal-up" style="--d:.7s">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>PyTorch</span><span class="sep">◆</span>
+      <span>TensorFlow</span><span class="sep">◆</span>
+      <span>Scikit-learn</span><span class="sep">◆</span>
+      <span>LightGBM</span><span class="sep">◆</span>
+      <span>RAG Systems</span><span class="sep">◆</span>
+      <span>Prompt Engineering</span><span class="sep">◆</span>
+      <span>Vector Databases</span><span class="sep">◆</span>
+      <span>Flask</span><span class="sep">◆</span>
+      <span>Streamlit</span><span class="sep">◆</span>
+      <span>SQL</span><span class="sep">◆</span>
+      <span>Python</span><span class="sep">◆</span>
+      <span>XGBoost</span><span class="sep">◆</span>
+      <span>CatBoost</span><span class="sep">◆</span>
+      <span>OpenCV</span><span class="sep">◆</span>
+      <span>Pandas</span><span class="sep">◆</span>
+      <span>NumPy</span><span class="sep">◆</span>
+      <!-- repeat for seamless loop -->
+      <span>PyTorch</span><span class="sep">◆</span>
+      <span>TensorFlow</span><span class="sep">◆</span>
+      <span>Scikit-learn</span><span class="sep">◆</span>
+      <span>LightGBM</span><span class="sep">◆</span>
+      <span>RAG Systems</span><span class="sep">◆</span>
+      <span>Prompt Engineering</span><span class="sep">◆</span>
+      <span>Vector Databases</span><span class="sep">◆</span>
+      <span>Flask</span><span class="sep">◆</span>
+      <span>Streamlit</span><span class="sep">◆</span>
+      <span>SQL</span><span class="sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Background &<br>Expertise</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-text reveal-up">
+          <p class="about-lead">I'm a final-year Computer Science & AI student specializing in Information Systems at Helwan University, Cairo. I build end-to-end machine learning systems — from raw data to deployed production models.</p>
+          <p class="about-body">With hands-on experience spanning deep learning, LLM applications, time-series forecasting, and real-time inference APIs, I approach every project with both technical rigor and a focus on practical impact. I was awarded <strong>3rd Place across the entire ML Track</strong> at DEPI for my deepfake detection system.</p>
+          <div class="about-pills">
+            <span class="pill">Problem Solver</span>
+            <span class="pill">End-to-End ML</span>
+            <span class="pill">Arabic · English</span>
+            <span class="pill">GPA 3.4</span>
+          </div>
+        </div>
+        <div class="skills-grid reveal-up">
+          <div class="skill-group">
+            <div class="skill-group-label">ML & Deep Learning</div>
+            <div class="skill-bars">
+              <div class="skill-row"><span>PyTorch / TensorFlow</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+              <div class="skill-row"><span>Scikit-learn / XGBoost</span><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+              <div class="skill-row"><span>LightGBM / CatBoost</span><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">LLM & Generative AI</div>
+            <div class="skill-bars">
+              <div class="skill-row"><span>RAG Systems</span><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
+              <div class="skill-row"><span>Prompt Engineering</span><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+              <div class="skill-row"><span>Vector Databases</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Data & Deployment</div>
+            <div class="skill-bars">
+              <div class="skill-row"><span>Python / SQL</span><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div></div>
+              <div class="skill-row"><span>Flask / Streamlit</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div></div>
+              <div class="skill-row"><span>Pandas / NumPy</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Certs strip -->
+      <div class="cert-strip reveal-up">
+        <div class="cert-item"><i class="fa-brands fa-aws"></i><span>Stanford</span></div>
+        <div class="cert-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png" alt="Google" style="height:14px;filter:brightness(0) invert(1);opacity:.6" /><span>NVIDIA</span></div>
+        <div class="cert-item"><i class="fa-brands fa-microsoft"></i><span>Microsoft / DEPI</span></div>
+        <div class="cert-item"><i class="fa-solid fa-building-columns"></i><span>IBM</span></div>
+        <div class="cert-item"><i class="fa-solid fa-bolt"></i><span>Sprints</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02 — Projects</span>
+        <h2 class="section-title">Selected<br>Work</h2>
+      </div>
+
+      <!-- Featured project -->
+      <div class="project-featured reveal-up">
+        <div class="feat-content">
+          <div class="feat-meta">
+            <span class="feat-num">01</span>
+            <span class="feat-award"><i class="fa-solid fa-trophy"></i> 3rd Place — ML Track</span>
+          </div>
+          <h3 class="feat-title">DeepFake Detection System</h3>
+          <p class="feat-desc">AI-powered video manipulation detector built with PyTorch, OpenCV & Streamlit. Multi-frame analysis with automated face extraction achieved AUC of 0.98 on FaceForensics++ and UADFV datasets. Deployed as a real-time web application with confidence score predictions.</p>
+          <div class="feat-tags">
+            <span class="feat-tag">PyTorch</span>
+            <span class="feat-tag">OpenCV</span>
+            <span class="feat-tag">Streamlit</span>
+            <span class="feat-tag">FaceForensics++</span>
+            <span class="feat-tag">UADFV</span>
+          </div>
+          <div class="feat-metric">
+            <span class="metric-val">0.98</span>
+            <span class="metric-key">AUC Score</span>
+          </div>
+          <a class="feat-link" href="#" target="_blank" rel="noopener">
+            <span>View on GitHub</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <div class="feat-visual">
+          <div class="feat-code-window">
+            <div class="code-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="code-title">detector.py</span></div>
+            <pre class="code-block"><code><span class="kw">import</span> torch
+<span class="kw">import</span> cv2
+
+<span class="fn">def</span> <span class="name">predict_frame</span>(frame):
+    face = <span class="fn">extract_face</span>(frame)
+    tensor = <span class="fn">preprocess</span>(face)
+
+    <span class="kw">with</span> torch.no_grad():
+        logit = model(tensor)
+        prob  = <span class="fn">sigmoid</span>(logit)
+
+    <span class="kw">return</span> {
+        <span class="str">"fake_prob"</span>: prob.item(),
+        <span class="str">"label"</span>: <span class="str">"FAKE"</span> <span class="kw">if</span> prob > <span class="num">0.5</span> <span class="kw">else</span> <span class="str">"REAL"</span>
+    }
+
+<span class="comment"># AUC: 0.98 on FaceForensics++</span></code></pre>
+            <div class="feat-auc-badge">AUC <strong>0.98</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project grid -->
+      <div class="proj-grid">
+        <article class="proj-card reveal-up" style="--d:.1s">
+          <div class="proj-num">02</div>
+          <div class="proj-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>RAG-Powered Q&A Agent</h3>
+          <p>Ingestion pipeline for 200+ PDFs with optimised chunking — 40% faster retrieval, 35% accuracy gain over native LLM, 90%+ contextual relevance.</p>
+          <div class="proj-tags">
+            <span>RAG</span><span>LangChain</span><span>Vector DB</span><span>NVIDIA</span>
+          </div>
+          <div class="proj-metrics">
+            <div><span class="m-val">−40%</span><span class="m-key">Search time</span></div>
+            <div><span class="m-val">+35%</span><span class="m-key">Accuracy</span></div>
+          </div>
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+        </article>
+
+        <article class="proj-card reveal-up" style="--d:.2s">
+          <div class="proj-num">03</div>
+          <div class="proj-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Retail Sales Forecasting</h3>
+          <p>High-performance forecasting pipeline with LightGBM & CatBoost. Advanced time-series features: lag variables, rolling windows, seasonal patterns.</p>
+          <div class="proj-tags">
+            <span>LightGBM</span><span>CatBoost</span><span>Time-Series</span>
+          </div>
+          <div class="proj-metrics">
+            <div><span class="m-val">R²≈0.90</span><span class="m-key">Holdout data</span></div>
+          </div>
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+        </article>
+
+        <article class="proj-card reveal-up" style="--d:.3s">
+          <div class="proj-num">04</div>
+          <div class="proj-icon"><i class="fa-solid fa-heartbeat"></i></div>
+          <h3>Diabetes Prediction System</h3>
+          <p>Ensemble ML pipeline (Neural Networks, Random Forest, XGBoost) with Flask REST API for real-time inference and automated retraining scripts.</p>
+          <div class="proj-tags">
+            <span>Flask</span><span>TensorFlow</span><span>XGBoost</span>
+          </div>
+          <div class="proj-metrics">
+            <div><span class="m-val">76.6%</span><span class="m-key">Accuracy</span></div>
+          </div>
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+        </article>
+
+        <article class="proj-card reveal-up" style="--d:.4s">
+          <div class="proj-num">05</div>
+          <div class="proj-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>LLM Application — Prompt Engineering</h3>
+          <p>Few-shot learning & chain-of-thought prompting for improved task completion and output formatting compliance. NVIDIA certificate project.</p>
+          <div class="proj-tags">
+            <span>LLMs</span><span>Few-Shot</span><span>CoT</span><span>NVIDIA</span>
+          </div>
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+        </article>
+
+        <article class="proj-card reveal-up" style="--d:.5s">
+          <div class="proj-num">06</div>
+          <div class="proj-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3>Sales Performance Dashboard</h3>
+          <p>IBM Cognos dashboard tracking 15+ KPIs across sales regions and product categories with drill-down analysis cutting time-to-insight significantly.</p>
+          <div class="proj-tags">
+            <span>IBM Cognos</span><span>BI</span><span>KPIs</span>
+          </div>
+          <div class="proj-metrics">
+            <div><span class="m-val">15+</span><span class="m-key">KPIs tracked</span></div>
+          </div>
+          <a href="#" class="proj-link"><i class="fa-solid fa-chart-bar"></i> Dashboard</a>
+        </article>
+
+        <article class="proj-card reveal-up" style="--d:.6s">
+          <div class="proj-num">07</div>
+          <div class="proj-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Student Performance Analysis</h3>
+          <p>EDA on 1,000+ student records surfacing performance trends and correlations between parental education levels and academic outcomes.</p>
+          <div class="proj-tags">
+            <span>Pandas</span><span>Seaborn</span><span>EDA</span>
+          </div>
+          <div class="proj-metrics">
+            <div><span class="m-val">1,000+</span><span class="m-key">Records</span></div>
+          </div>
+          <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Notebook</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03 — Experience</span>
+        <h2 class="section-title">Professional<br>Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Customer Service Representative</h3>
+                <span class="tl-company">Alorica Egypt — Irish Airlines Account</span>
+              </div>
+              <span class="tl-date">2025 – Present</span>
+            </div>
+            <p class="tl-desc">Handling complex international customer inquiries in a high-volume environment. Developed cross-cultural communication, conflict-resolution, and pressure-management skills working for an Irish airline account.</p>
+            <div class="tl-skills"><span>Communication</span><span>Problem Solving</span><span>International Client</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="tl-marker">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Receptionist & Concierge</h3>
+                <span class="tl-company">Ramses Hilton</span>
+              </div>
+              <span class="tl-date">2024</span>
+            </div>
+            <p class="tl-desc">Managed guest operations, reservations, and concierge services for a 5-star international hotel. Gained high-standard hospitality skills — precision, multitasking, and professional communication in a fast-paced luxury environment.</p>
+            <div class="tl-skills"><span>Hospitality</span><span>Multitasking</span><span>Professional Comms</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="tl-marker">
+            <div class="tl-dot tl-dot-edu"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">B.Sc. Computer Science & AI</h3>
+                <span class="tl-company">Helwan University — Information Systems</span>
+              </div>
+              <span class="tl-date">Expected 2026</span>
+            </div>
+            <p class="tl-desc">GPA 3.4 · Coursework: Machine Learning, Databases, Linear Algebra, Probability, OOP, Software Engineering. Built multiple end-to-end AI projects including a deepfake detection system that won 3rd Place across the entire ML Track at DEPI.</p>
+            <div class="tl-skills"><span>GPA 3.4</span><span>ML Research</span><span>3rd Place Award</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certs-section">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04 — Certifications</span>
+        <h2 class="section-title">Lifelong<br>Learning</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal-up" style="--d:.0s"><div class="cert-issuer">Stanford / Coursera</div><div class="cert-name">Supervised Machine Learning</div><div class="cert-date">Aug 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.08s"><div class="cert-issuer">Stanford / Coursera</div><div class="cert-name">Advanced Learning Algorithms</div><div class="cert-date">Oct 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.16s"><div class="cert-issuer">Stanford / Coursera</div><div class="cert-name">Unsupervised & Reinforcement Learning</div><div class="cert-date">Oct 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.24s"><div class="cert-issuer">NVIDIA</div><div class="cert-name">Building RAG Agents with LLMs</div><div class="cert-date">Sep 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.32s"><div class="cert-issuer">NVIDIA</div><div class="cert-name">LLM Applications with Prompt Engineering</div><div class="cert-date">Sep 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.40s"><div class="cert-issuer">DEPI / Microsoft</div><div class="cert-name">AI & Data Science — ML Engineer</div><div class="cert-date">Dec 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.48s"><div class="cert-issuer">Sprints</div><div class="cert-name">Sprint-Up AI & ML Engineer Training</div><div class="cert-date">Jun 2025</div></div>
+        <div class="cert-card reveal-up" style="--d:.56s"><div class="cert-issuer">IBM / Coursera</div><div class="cert-name">Data Analyst Professional Certificate</div><div class="cert-date">In Progress</div></div>
+        <div class="cert-card reveal-up" style="--d:.64s"><div class="cert-issuer">ITI / Mahara-Tech</div><div class="cert-name">Python Programming Basics</div><div class="cert-date">Aug 2025</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <div class="contact-layout reveal-up">
+        <div class="contact-left">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="contact-title">Let's build<br>something <span class="accent-text">great.</span></h2>
+          <p class="contact-body">Open to ML engineering roles, research collaborations, and freelance AI/data science projects. Based in Giza, Egypt — remote-friendly.</p>
+        </div>
+        <div class="contact-right">
+          <a class="contact-link" href="https://www.linkedin.com/in/moragab-22nov04/" target="_blank" rel="noopener">
+            <div class="cl-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-handle">moragab-22nov04</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square cl-arrow"></i>
+          </a>
+          <a class="contact-link" href="https://github.com/moragab11" target="_blank" rel="noopener">
+            <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">GitHub</span>
+              <span class="cl-handle">moragab11</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square cl-arrow"></i>
+          </a>
+          <a class="contact-link" href="mailto:mo12ragab1234@email.com">
+            <div class="cl-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">Email</span>
+              <span class="cl-handle">mo12ragab1234@email.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square cl-arrow"></i>
+          </a>
+          <a class="contact-link" href="https://drive.google.com/uc?export=download&id=1H1kYPSrWMUdjS6Y7cHRu2zD8lzEZxBGq" target="_blank" rel="noopener">
+            <div class="cl-icon"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="cl-text">
+              <span class="cl-label">Resume</span>
+              <span class="cl-handle">Download PDF</span>
+            </div>
+            <i class="fa-solid fa-arrow-down cl-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="brand">MR<span class="brand-dot">.</span></span>
+      <span class="footer-copy">© 2025 Mohamed Ragab • Giza, Egypt</span>
+      <span class="footer-built">Built with care & CSS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
